@@ -1,0 +1,38 @@
+:root{
+    box-sizing: border-box;
+    color: white;
+}
+* ::before, ::after{
+    box-sizing: inherit;
+}
+
+body{
+    background-image: url("https://cdn.pixabay.com/photo/2016/03/15/02/42/floor-1256804_960_720.jpg");
+}
+#header{
+    background-color: black;
+    padding: 5px;
+    font-family: 'Cookie', cursive;
+}
+
+#logo{
+    float: left;
+    width: 20%;
+}
+
+.menu{
+    float: left;
+    width: 60%;
+}
+
+.contact-info{
+    float: left;
+    width: 20%;
+}
+
+.clearfix::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
